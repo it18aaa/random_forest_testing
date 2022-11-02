@@ -19,8 +19,8 @@ img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
 
 # opencv is BGR, separate out individual channels...
 img_red = img[:,:,2]
-img_blue = img[:,:,1]
-img_green = img[:,:,0]
+img_green = img[:,:,1]
+img_blue = img[:,:,0]
 
 # entropy filter only works on grayscale?
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
